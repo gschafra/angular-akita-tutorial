@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { AuthorStore } from '../stores/author.store';
+import { Author } from '../models/author';
+import { tap } from 'rxjs/operators';
 
 @Injectable()
 export class AuthorService {
