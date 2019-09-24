@@ -20,7 +20,7 @@ export class BlogService {
 
 
   get() {
-    return this.http.get<Blog[]>('http://localhost:3000/blogs').pipe(tap(blogs => {
+    return this.http.get<Blog[]>('https://angularaktitatutoria-edc6.restdb.io/rest/authors').pipe(tap(blogs => {
       this.blogStore.set(blogs);
     }));
   }

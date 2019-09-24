@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';,
-import { FormBuilder, FormGroup, FormGroupDirective, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
