@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Author</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let author of authors | async" [value]="author.name">
+      {{author.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
