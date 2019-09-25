@@ -5,14 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
-import { BlogService } from './services/blog.service';
-import { AuthorService } from './services/author.service';
 import { AuthorSectionComponent } from './components/author-section/author-section.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, MatSelectModule ],
-  declarations: [ AppComponent, AuthorSectionComponent ],
-  bootstrap:    [ AppComponent ],
-  providers: [ BlogService, AuthorService ]
+	imports: [BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, MatSelectModule],
+	declarations: [AppComponent, AuthorSectionComponent],
+	bootstrap: [AppComponent],
+	providers: []
 })
-export class AppModule { }
+export class AppModule
+{
+}

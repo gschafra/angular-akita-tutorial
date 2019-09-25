@@ -4,7 +4,7 @@ import { AuthorStore } from '../stores/author.store';
 import { Author } from '../models/author';
 import { tap } from 'rxjs/operators';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AuthorService {
  
   constructor(private authorStore: AuthorStore,
